@@ -1,118 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moderator Applications</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moderator Applications</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #000000, #6c5ce7);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-        #logo {
-            max-width: 150px; /* Adjust the size as needed */
-            display: block;
-            margin: 0 auto;
-        }
+    header {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-        section {
-            margin: 20px;
-            text-align: center;
-        }
+    header h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+    }
 
-        h1 {
-            color: #333;
-        }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
 
-        p {
-            line-height: 1.6;
-        }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
 
-        .google-form-iframe {
-            width: 100%;
-            max-width: 700px;
-            height: 520px;
-            border: none;
-            margin: 0 auto;
-        }
+    .glass-card:hover {
+      transform: translateY(-5px);
+    }
 
-        .requirements-info {
-            background-color: #ffcccc;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
+    .glass-card h2 {
+      margin-bottom: 15px;
+      color: #fff;
+      font-size: 1.5em;
+    }
 
-        .info {
-            background-color: #ccffcc;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-    </style>
+    .glass-card p, .glass-card li {
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    ol {
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 520px;
+      border: none;
+      border-radius: 10px;
+      margin: 0 auto;
+      display: block;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      padding: 20px 0;
+      color: #ccc;
+      margin-top: auto;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Moderator Applications</h1>
-    </header>
+  <header>
+    <h1>Moderator Applications</h1>
+  </header>
 
-    <section id="requirements-info" class="requirements-info">
-        <p>
-            !! READ THIS:
-        </p>
-        <p>
-            You need to follow these requirements and information before applying to mod.
-        </p>
-        <p>
-            <strong>REQUIREMENTS:</strong>
-        </p>
-        <ol>
-            <li>1 year old Discord account</li>
-            <li>2 weeks in Basket Battle server</li>
-            <li>Be 13+</li>
-            <li>Must know how to moderate</li>
-        </ol>
-        <p>
-            <strong>IF THE REQUIREMENTS ARE NOT READ, YOU MIGHT BE IP-BANNED FROM THIS PAGE.</strong>
-        </p>
-    </section>
-
-    <section id="info" class="info">
-        <p>
-            <strong>INFO:</strong>
-        </p>
-        <p>
-            As a Basket Battle mod, you need to try your best to keep this server family friendly, by meaning that, no swearing and making sure everyone is abiding by the rules. If you feel that you don't want to be a mod anymore, you can always resign. Once you apply for mod, you agree that CTK can collect information like your IP, country, and device (PERSONAL INFORMATION IS NOT SHARED AND NOT AVAILABLE IN CTK DATABASE). Basket Battle has all right to deny you from getting moderator.
-        </p>
-    </section>
-
-    <div class="google-form-container">
-        <iframe class="google-form-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfWY6eDLAf87vQI5ZLQCrpVzy8FxPfg1_Pzy_xoUNAo8_1fyQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <main class="section">
+    <div class="glass-card">
+      <h2>📢 Read This Before Applying</h2>
+      <p>You need to follow these requirements before applying to mod:</p>
+      <ol>
+        <li>1 year old Discord account</li>
+        <li>2 weeks in Basket Battle server</li>
+        <li>Be 13+</li>
+        <li>Must know how to moderate</li>
+      </ol>
+      <p><strong>IF THE REQUIREMENTS ARE NOT READ, YOU MIGHT BE IP-BANNED FROM THIS PAGE.</strong></p>
     </div>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6576e0b570c9f2407f7e8003/1hhc5rh37';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+
+    <div class="glass-card">
+      <h2>ℹ️ Info</h2>
+      <p>
+        As a Basket Battle mod, you must help keep the server family-friendly (no swearing and rule enforcement). You may resign anytime. By applying, you agree that CTK can collect data like IP, country, and device type. Your personal info is never shared or stored in the CTK database. Basket Battle reserves the right to deny applications.
+      </p>
+    </div>
+
+    <div class="glass-card">
+      <h2>📝 Application Form</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWY6eDLAf87vQI5ZLQCrpVzy8FxPfg1_Pzy_xoUNAo8_1fyQ/viewform?embedded=true" loading="lazy">
+        Loading…
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Basket Battle. All rights reserved.
+  </footer>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6576e0b570c9f2407f7e8003/1hhc5rh37';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 
 </body>
 </html>
